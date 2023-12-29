@@ -1,0 +1,142 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F6ECA9;
+}
+
+header {
+    background-color: #11235A;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.home-section {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 2em;
+    margin-top: 70px; /* Adjust margin-top to account for the fixed header */
+}
+
+.home-content {
+    max-width: 45%; /* Adjust the maximum width of the home content */
+    text-align: left;
+    margin-right: 20px; /* Adjust the margin-right as needed */
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin-left: 20px; /* Adjust the margin-left as needed */
+}
+
+h1, p {
+    color: #333;
+    margin-bottom: 8px; /* Adjust the margin-bottom as needed for h1 and p */
+}
+
+section {
+    padding: 2em;
+    text-align: center; /* Center the content in the sections */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.project {
+    margin-bottom: 2em;
+}
+
+.project img {
+    max-width: 50%; /* Adjust the maximum width of the project images */
+    height: auto;
+}
+
+.project img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contactForm {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #C6CF9B;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align form content to the left within the centered form */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Optional: Add styles for responsiveness */
+@media screen and (max-width: 600px) {
+    #contactForm {
+        width: 90%;
+    }
+
+    .home-section {
+        margin-top: 0; /* Adjust margin-top for small screens */
+    }
+}
